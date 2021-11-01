@@ -29,11 +29,14 @@ public class WebReservacion {
     @PostMapping("/save")
     @ResponseStatus(HttpStatus.CREATED)
     public Reservacion save(@RequestBody Reservacion reservation) {
+
         return servicio.save(reservation);
     }
+
     @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
-    public Reservacion update(@RequestBody Reservacion reservacion) {
+    public Reservacion update(@RequestBody Reservacion reservacion)
+    {
         return servicio.update(reservacion);
     }
     @DeleteMapping("/{id}")

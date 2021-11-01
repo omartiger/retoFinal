@@ -14,7 +14,7 @@ public class Reservacion implements Serializable {
     private Integer idReservation;
     private Date startDate;
     private Date devolutionDate;
-    private String status;
+    private String status ="created";
 
     @ManyToOne
     @JoinColumn(name = "id")
